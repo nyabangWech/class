@@ -36,3 +36,33 @@ class Car {
     //     }
     //     year(){}
      //
+
+     class question{
+      constructor(text,options,correctAnswer){
+        this.text=text;
+        this .options=options;
+        this.correctAnswer= correctAnswer;
+      }
+      checkAnswer(UserAnswer){
+        return UserAnswer===this.correctAnswer;
+      }
+     }
+     const  quiz1= new question("How many colors are in the kenyan national  flag"["4","6","8"]);
+     const UserAnswer="4";
+     console.log(quiz1.checkAnswer(UserAnswer));
+
+
+
+     class quizz{
+      constructor(){
+        this.quiz=[];
+        this.currentquizIndex = 0;
+        this.score = 0;
+      }
+      addquestion(question){
+
+      }
+      nextquestion(question){
+         quiz++
+      }
+     } 
